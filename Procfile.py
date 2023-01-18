@@ -1,1 +1,1 @@
-web: python new.py
+web: gunicorn --pythonpath app app.wsgi
