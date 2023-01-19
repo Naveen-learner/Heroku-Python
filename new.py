@@ -236,6 +236,4 @@ def  update_table(input_value):
 
 # Run the App
 if __name__ == '__main__':
-    app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+    app.run_server(port = int(os.environ.get('PORT', 5000)))
