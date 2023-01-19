@@ -7,7 +7,6 @@ import dash_table_experiments as dt
 import pandas as pd
 import plotly.graph_objs as go
 from dash.dependencies import Input, Output, State#, Event
-import random
 import plotly
 import plotly.express as px
 import dash_bootstrap_components as dbc
@@ -15,7 +14,6 @@ import pandas as pd
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 import plotly.express as px
-import os
 
 #Import dataframe
 url='https://raw.githubusercontent.com/Naveen-learner/Heroku-Python/main/Sales.csv'
@@ -236,4 +234,4 @@ def  update_table(input_value):
 
 # Run the App
 if __name__ == '__main__':
-    app.run_server(port = int(os.environ.get('PORT', 5000)))
+    app.run_server(debug=True)
