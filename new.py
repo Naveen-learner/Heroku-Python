@@ -236,4 +236,4 @@ def  update_table(input_value):
 
 # Run the App
 if __name__ == '__main__':
-    app.run_server(port = int(os.environ.get('PORT', 5000)))
+    app.run_server(debug=True)
